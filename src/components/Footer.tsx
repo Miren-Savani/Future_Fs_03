@@ -94,13 +94,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-4 mb-4 md:mb-0">
-            </div>
-            <div className="text-sm text-gray-400">
+          <div className="flex flex-col items-center space-y-6">
+            <div className="text-sm text-gray-400 text-center">
               © {new Date().getFullYear()} Nike-Rebrand, Inc. All Rights Reserved
             </div>
           </div>
@@ -108,4 +105,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-} 
+}
