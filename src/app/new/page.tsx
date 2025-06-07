@@ -2,8 +2,9 @@
 
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/data/products';
-import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function NewPage() {
   const [sortBy, setSortBy] = useState('');
@@ -46,9 +47,11 @@ export default function NewPage() {
               <p className="text-xl mb-6">
                 Discover our latest collection of innovative designs and cutting-edge technology.
               </p>
-              <button className="bg-white text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors">
-                Shop Now
-              </button>
+              <Link href="/">
+                <button className="bg-white text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors">
+                  Shop Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
