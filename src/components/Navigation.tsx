@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(null);
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const { user, logout } = useAuth();
   const { cart } = useCart();
 
